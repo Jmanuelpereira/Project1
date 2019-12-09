@@ -2,8 +2,8 @@ const allSquares = [];
 
 function genSquares(){
     let numValue = 0 ;
-    for (i = 0; i >= 24; i++){
-        numValue = Math.floor(Math.random() * Math.floor(24));
+    for (i = 0; i < 24; i++){
+        numValue = Math.floor(Math.random() * 24);
         allSquares.push(numValue);
     }
 }
@@ -11,7 +11,7 @@ function genSquares(){
 genSquares();
 
 
-const SquareGame = new SquareGame(squares);
+const SquareGame = new SquareGame(allSquares);
 
 document.addEventListener("DOMContentLoaded", function(event) { 
     let html = '';
