@@ -6,6 +6,8 @@ class SquareGame {
       this.SquaresMatches = 0;
     }
 
+    
+
 
 suffleSquare(){
 
@@ -15,7 +17,7 @@ suffleSquare(){
 
 gameFinished() {
 
-    
+
 }
 
 
