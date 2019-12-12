@@ -1,115 +1,71 @@
 body {
     margin:0;
-  
-    background: url("background.jpg") no-repeat;
+    background: url("earth-background.jpg") no-repeat;
     background-size: cover;
     font-family: "Helvetica Neue", Arial, sans-serif;
   }
   
   .square {
-    
-      width:100px;
-      height:120px;
-      padding:10px;
-      margin:0px auto;
-      /* box-shadow: inset 0px 0px 20px -6px rgba(97,89,97,1); */
-    display: flex;
-    justify-content: space-between;
-    margin: 10px;
-    /* background-image: url("alien.png") no-repeat; */
-    background-size: cover;
-    background-image: url('galaxy.png'); 
+      width:12vw;
+      height:20vh;
+      padding:15px;
+      
+      
+      margin: 10px;
+      background: rgba(0, 0, 0, 0.7);
+
   }
   
 
   .gameTable {
-
     padding: 25px;
     display: flex;
     flex-wrap: wrap;
+  }
 
+  .scoreboard {
+
+    background: rgba(30, 10, 212, 0.7);
+
+    height: 6vh;
 
   }
 
   .userData {
-    width: 90%;
-    background: rgba(255,0,0,0.3);
     display: flex;
     justify-content: space-between;
-
   }
 
 
 
   .scoreData {
-
     display: flex;
     justify-content: space-between;
-
   }
 
 
-/* .scoreboard {
+  .square > img {
+    width: 100%;
+    
+    
 
-} */
+  }
+
+  .square > .text {
+
+    color:  white;
+    
+    text-align: center;
+    padding: 10px;
+
+
+  }
+
+  .controllBlock {
+
+  }
+
 
   /* Square styles options */
   
-
-  
-  .square.turned {pointer-events:none;}
-  
-  .square.turned .front {transform:rotateY(0deg);}
-  .square.turned .back {transform:rotateY(180deg)}
-  
-  .square .back,
-  .square .front {
-
-    
-    transition:transform .6s;
-  }
-  
-  .square .back {
-    background-color: #ccc;
-    
-  
-  }
-  
-  .square .front {
-    position:absolute;
-    left:0;top:0;
-    transform:rotateY(-180deg) translateZ(1px); 
-    backface-visibility:hidden;
-    /* background-image:  */
-  }
-  
-
-  
-  .container {
-    position: relative;
-  }
-  
-  h1 {
-    color: rgba(215, 40, 40, 0.9);
-    font-weight: bolder;
-    font-size: 67px;
-    text-align: center;
-    text-shadow: 0px 0px 20px rgba(150, 150, 150, 1);
-  
-  }
-  
-  h2 {
-    color: #456783;
-    font-weight: bolder;
-    font-size: 35px;
-    text-align: center;
-    text-shadow: 1px #ff0000;
-    text-shadow: 1px #ff0000;
-  }
-  
-  p {
-    font-weight: bolder;
-    font-size: 20px;
-    text-align: center;
-  }
-  
+ 
