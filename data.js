@@ -3,28 +3,28 @@ const allSquares = [];
 const names = [
   {
     name: "Andromeda",
-    score: -10,
+    price: -10,
     enemys: "",
     planets: ["ARD", "", "" , "", "", ""]
     
    },
    {
     name: "Dwingeloo 1",
-    score: -10,
+    price: -10,
     enemys: "",
     planets: ["ARD", "", "" , "", "", ""]
     
    },
    {
     name: "Centaurus A",
-    score: -10,
+    price: -10,
     enemys: "",
     planets: ["ARD", "", "" , "", "", ""]
     
    },
    {
     name: "Circinus",
-    score: -10,
+    price: -10,
     enemys: "",
     planets: ["ARD", "", "" , "", "", ""]
     
@@ -32,15 +32,7 @@ const names = [
 
    {
     name: "Antennae",
-    score: -10,
-    enemys: "",
-    planets: ["ARD", "", "" , "", "", ""]
-    
-   },
-
-   {
-    name: "Andromeda II",
-    score: -10,
+    price: -10,
     enemys: "",
     planets: ["ARD", "", "" , "", "", ""]
     
@@ -48,7 +40,7 @@ const names = [
 
    {
     name: "Barnard",
-    score: -10,
+    price: -10,
     enemys: "",
     planets: ["ARD", "", "" , "", "", ""]
     
@@ -57,7 +49,7 @@ const names = [
    
    {
     name: "Sombrero",
-    score: -10,
+    price: -10,
     enemys: "",
     planets: ["ARD", "", "" , "", "", ""]
     
@@ -66,7 +58,7 @@ const names = [
    
    {
     name: "Cigarro",
-    score: -10,
+    price: -10,
     enemys: "",
     planets: ["ARD", "", "" , "", "", ""]
     
@@ -75,7 +67,7 @@ const names = [
    
    {
     name: "Remolino",
-    score: -10,
+    price: -10,
     enemys: "",
     planets: ["ARD", "", "" , "", "", ""]
     
@@ -83,7 +75,7 @@ const names = [
    
    {
     name: "Sextans A",
-    score: -10,
+    price: -10,
     enemys: "",
     planets: ["ARD", "", "" , "", "", ""]
     
@@ -91,7 +83,7 @@ const names = [
    
    {
     name: "M66",
-    score: -10,
+    price: -10,
     enemys: "",
     planets: ["ARD", "", "" , "", "", ""]
     
@@ -99,7 +91,7 @@ const names = [
    
    {
     name: "NGC 300",
-    score: -10,
+    price: -10,
     enemys: "",
     planets: ["ARD", "", "" , "", "", ""]
     
@@ -107,7 +99,7 @@ const names = [
 
    {
     name: "los Ojos",
-    score: -10,
+    price: -10,
     enemys: "",
     planets: ["ARD", "", "" , "", "", ""]
     
@@ -115,7 +107,7 @@ const names = [
 
    {
     name: "Bode",
-    score: -10,
+    price: -10,
     enemys: "",
     planets: ["ARD", "", "" , "", "", ""]
     
@@ -123,7 +115,7 @@ const names = [
 
    {
     name: "Cometa",
-    score: -10,
+    price: -10,
     enemys: "",
     planets: ["ARD", "", "" , "", "", ""]
     
@@ -131,15 +123,7 @@ const names = [
 
    {
     name: "Molinete",
-    score: -10,
-    enemys: "",
-    planets: ["ARD", "", "" , "", "", ""]
-    
-   },
-
-   {
-    name: "Nube de Magallanes",
-    score: -10,
+    price: -10,
     enemys: "",
     planets: ["ARD", "", "" , "", "", ""]
     

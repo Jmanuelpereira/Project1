@@ -13,16 +13,16 @@ function genSquares(){
 genSquares();
 
 
-const nuevoGame = new SquareGame(allSquares);
+const nuevoGame = new spaceGame(allSquares);
 
 
 
 document.addEventListener("DOMContentLoaded", function(event) { 
     let html = '';
-    nuevoGame.square.forEach(id => {
+    nuevoGame.square.forEach((id, i) => {
       
-      html += `<div class="square"  name="${id.name}" score = ${id.score}>`;
-      html += `<div class="back ${id.name}" name="${id.name}" score = ${id.score}></div>`;
+      html += `<div class="square"  name="${id.name}" price = ${id.price} index = "${i}">`;
+      html += `<div class="back ${id.name}" name="${id.name}" price = ${id.price}></div>`;
       html += `<div class="front"></div>`;
       html += `<img src="galaxy.png" alt="${id.name}">`;
       html += `<p class="text">${id.name}</p>`;
@@ -31,32 +31,42 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
     // Add all the divs to the HTML
   document.querySelector('.gameTable').innerHTML = html;
-});
+
+  console.log(document.querySelectorAll("body > div.gameTable > div.square"))
+  document.querySelectorAll('.square').forEach( oneSquare => {
+      oneSquare.onclick = function() {
 
 
-console.log(document.querySelectorAll('.square'))
+        
+        
+          let selectedGalaxy;
+          let index = oneSquare.attributes[3].value;
 
-document.querySelectorAll('.square').forEach( oneSquare => {
-    oneSquare.onclick = function() {
-      console.log("Function works")
-      // oneSquare.classList.add("turned");
-      // const valor = oneSquare.attributes[0].value
-      console.log(valor)
-    }
-})
+          
+          for(i = 0; i > allSquares.length ; i++){
+            console.log(allSquares[10])
+            
+            if(index == allSquares[i])
+            selectedGalaxy = allSquares[i].name;
 
-// function flipCard() {
 
-//   for (let i = 0; i < allSquares.length; i++) {
-    
-//     let square = document.querySelector(`body > div.gameTable > div:nth-child(${i + 1})`)
-    
-//     square.onClick = function() {
-//       console.log("hello")
-//     }
-//     // console.log(square)
-//   }
+          }
 
-// }
+          console.log(selectedGalaxy)
 
+          
+
+          // oneSquare.classList.add("turned");
+        // const valor = oneSquare.attributes[0].value
+        // console.log(valor)
+      }
+  })    
+
+
+
+
+
+  
+
+}); // End Domcontent
 
