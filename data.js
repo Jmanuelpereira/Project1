@@ -2,131 +2,329 @@ const allSquares = [];
 
 const names = [
   {
+    name: "Pegasi",
+    price: -10,
+    enemys: "",
+    suns: [
+
+      {
+      name: "Pegasi B51",
+      old: 4567,
+      description: " This sun is so hot but still have some planets with good condition to support life",
+      price:70,
+      planets: [
+        {
+        name: "ARD",
+        price: -50,
+        sustainable: true,
+        img: "planet.png"
+      }, 
+      {
+        name: "ARD",
+        price: -50,
+        sustainable: true,
+        img: "planet.png"
+      }, 
+      {
+        name: "ARD",
+        price: -50,
+        sustainable: true,
+        img: "planet.png"
+      }, 
+      
+      ]//planets end
+
+      },
+
+      {
+        name: "Alternative",
+        old: 4567,
+        description: " This sun is so hot but still have some planets with good condition to support life",
+        price:70,
+        planets: [
+          {
+          name: "ARD",
+          price: -50,
+          sustainable: true,
+          img: "planet.png"
+        }, 
+        {
+          name: "ARD",
+          price: -50,
+          sustainable: true,
+          img: "planet.png"
+        }, 
+        {
+          name: "ARD",
+          price: -50,
+          sustainable: true,
+          img: "planet.png"
+        }, 
+        
+        ]//planets end
+  
+        },
+
+        {
+          name: "Alejandria",
+          old: 4567,
+          description: " This sun is so hot but still have some planets with good condition to support life",
+          price:70,
+          planets: [
+            {
+            name: "ARD",
+            price: -50,
+            sustainable: true,
+            img: "planet.png"
+          }, 
+          {
+            name: "ARD",
+            price: -50,
+            sustainable: true,
+            img: "planet.png"
+          }, 
+          {
+            name: "ARD",
+            price: -50,
+            sustainable: true,
+            img: "planet.png"
+          }, 
+          
+          ]//planets end
+    
+          },
+
+    ]//suns end
+
+   },
+
+   {
     name: "Andromeda",
     price: -10,
     enemys: "",
-    planets: ["ARD", "", "" , "", "", ""]
-    
-   },
-   {
-    name: "Dwingeloo 1",
-    price: -10,
-    enemys: "",
-    planets: ["ARD", "", "" , "", "", ""]
-    
-   },
-   {
-    name: "Centaurus A",
-    price: -10,
-    enemys: "",
-    planets: ["ARD", "", "" , "", "", ""]
-    
-   },
-   {
-    name: "Circinus",
-    price: -10,
-    enemys: "",
-    planets: ["ARD", "", "" , "", "", ""]
-    
+    suns: [
+
+      {
+      name: "Pegasi B51",
+      old: 4567,
+      description: " This sun is so hot but still have some planets with good condition to support life",
+      planets: [
+        {
+        name: "ARD",
+        price: -50,
+        sustainable: true,
+        img: "planet.png"
+      }, 
+      {
+        name: "ARD",
+        price: -50,
+        sustainable: true,
+        img: "planet.png"
+      }, 
+      {
+        name: "ARD",
+        price: -50,
+        sustainable: true,
+        img: "planet.png"
+      }, 
+      
+      ]//planets end
+
+      },
+
+    ]//suns end
+
    },
 
    {
-    name: "Antennae",
+    name: "Andromeda",
     price: -10,
     enemys: "",
-    planets: ["ARD", "", "" , "", "", ""]
-    
+    suns: [
+
+      {
+      name: "Pegasi B51",
+      old: 4567,
+      description: " This sun is so hot but still have some planets with good condition to support life",
+      planets: [
+        {
+        name: "ARD",
+        price: -50,
+        sustainable: true,
+        img: "planet.png"
+      }, 
+      {
+        name: "ARD",
+        price: -50,
+        sustainable: true,
+        img: "planet.png"
+      }, 
+      {
+        name: "ARD",
+        price: -50,
+        sustainable: true,
+        img: "planet.png"
+      }, 
+      
+      ]//planets end
+
+      },
+
+    ]//suns end
+
    },
 
    {
-    name: "Barnard",
+    name: "Andromeda",
     price: -10,
     enemys: "",
-    planets: ["ARD", "", "" , "", "", ""]
-    
+    suns: [
+
+      {
+      name: "Pegasi B51",
+      old: 4567,
+      description: " This sun is so hot but still have some planets with good condition to support life",
+      planets: [
+        {
+        name: "ARD",
+        price: -50,
+        sustainable: true,
+        img: "planet.png"
+      }, 
+      {
+        name: "ARD",
+        price: -50,
+        sustainable: true,
+        img: "planet.png"
+      }, 
+      {
+        name: "ARD",
+        price: -50,
+        sustainable: true,
+        img: "planet.png"
+      }, 
+      
+      ]//planets end
+
+      },
+
+    ]//suns end
+
+   },
+
+   {
+    name: "Andromeda",
+    price: -10,
+    enemys: "",
+    suns: [
+
+      {
+      name: "Pegasi B51",
+      old: 4567,
+      description: " This sun is so hot but still have some planets with good condition to support life",
+      planets: [
+        {
+        name: "ARD",
+        price: -50,
+        sustainable: true,
+        img: "planet.png"
+      }, 
+      {
+        name: "ARD",
+        price: -50,
+        sustainable: true,
+        img: "planet.png"
+      }, 
+      {
+        name: "ARD",
+        price: -50,
+        sustainable: true,
+        img: "planet.png"
+      }, 
+      
+      ]//planets end
+
+      },
+
+    ]//suns end
+
+   },
+   
+   {
+    name: "Andromeda",
+    price: -10,
+    enemys: "",
+    suns: [
+
+      {
+      name: "Pegasi B51",
+      old: 4567,
+      description: " This sun is so hot but still have some planets with good condition to support life",
+      planets: [
+        {
+        name: "ARD",
+        price: -50,
+        sustainable: true,
+        img: "planet.png"
+      }, 
+      {
+        name: "ARD",
+        price: -50,
+        sustainable: true,
+        img: "planet.png"
+      }, 
+      {
+        name: "ARD",
+        price: -50,
+        sustainable: true,
+        img: "planet.png"
+      }, 
+      
+      ]//planets end
+
+      },
+
+    ]//suns end
+
+   },
+
+   {
+    name: "Andromeda",
+    price: -10,
+    enemys: "",
+    suns: [
+
+      {
+      name: "Pegasi B51",
+      old: 4567,
+      description: " This sun is so hot but still have some planets with good condition to support life",
+      planets: [
+        {
+        name: "ARD",
+        price: -50,
+        sustainable: true,
+        img: "planet.png"
+      }, 
+      {
+        name: "ARD",
+        price: -50,
+        sustainable: true,
+        img: "planet.png"
+      }, 
+      {
+        name: "ARD",
+        price: -50,
+        sustainable: true,
+        img: "planet.png"
+      }, 
+      
+      ]//planets end
+
+      },
+
+    ]//suns end
+
    },
 
    
-   {
-    name: "Sombrero",
-    price: -10,
-    enemys: "",
-    planets: ["ARD", "", "" , "", "", ""]
-    
-   },
-
-   
-   {
-    name: "Cigarro",
-    price: -10,
-    enemys: "",
-    planets: ["ARD", "", "" , "", "", ""]
-    
-   },
-
-   
-   {
-    name: "Remolino",
-    price: -10,
-    enemys: "",
-    planets: ["ARD", "", "" , "", "", ""]
-    
-   },
-   
-   {
-    name: "Sextans A",
-    price: -10,
-    enemys: "",
-    planets: ["ARD", "", "" , "", "", ""]
-    
-   },
-   
-   {
-    name: "M66",
-    price: -10,
-    enemys: "",
-    planets: ["ARD", "", "" , "", "", ""]
-    
-   },
-   
-   {
-    name: "NGC 300",
-    price: -10,
-    enemys: "",
-    planets: ["ARD", "", "" , "", "", ""]
-    
-   },
-
-   {
-    name: "los Ojos",
-    price: -10,
-    enemys: "",
-    planets: ["ARD", "", "" , "", "", ""]
-    
-   },
-
-   {
-    name: "Bode",
-    price: -10,
-    enemys: "",
-    planets: ["ARD", "", "" , "", "", ""]
-    
-   },
-
-   {
-    name: "Cometa",
-    price: -10,
-    enemys: "",
-    planets: ["ARD", "", "" , "", "", ""]
-    
-   },
-
-   {
-    name: "Molinete",
-    price: -10,
-    enemys: "",
-    planets: ["ARD", "", "" , "", "", ""]
-    
-   },
-
   ]

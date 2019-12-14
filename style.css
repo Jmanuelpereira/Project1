@@ -27,7 +27,11 @@ body {
 
     background: rgba(30, 10, 212, 0.7);
 
-    height: 6vh;
+    height: 70px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    color: white;
 
   }
 
@@ -70,9 +74,40 @@ body {
 
   .first-level {
 
-    
+    display: flex;
+    flex-wrap: wrap;
+
   }
 
+  .second-level {
+
+    display: flex;
+    flex-wrap: wrap;
+
+  }
+
+  .third-level {
+
+    display: flex;
+    flex-wrap: wrap;
+
+  }
+
+  .description {
+
+  }
+
+.hidden-level {
+
+  display: none;
+}
+
+.buttons {
+  position: fixed;
+  bottom: 0;
+  margin-left: 42vw;
+  padding: 50px;
+}
 
   /* Square styles options */
   

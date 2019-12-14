@@ -9,19 +9,38 @@ function genSquares(){
     // console.log(allSquares)
 }
 
-
+//creating galaxys
 genSquares();
-
 
 const nuevoGame = new spaceGame(allSquares);
 
 
 
 document.addEventListener("DOMContentLoaded", function(event) { 
+
+
+
+document.querySelector('.start').onclick = function() {
+
+  let timer = 300
+
+  setInterval(function(){
+    timer--
+    console.log(timer)
+    document.querySelector(".timer").innerHTML = timer;
+    if (timer === 0) {
+      return "Game Over"
+    }
+  }, 1000)
+
+}
+
+
+
     let html = '';
     nuevoGame.square.forEach((id, i) => {
       
-      html += `<div class="square"  name="${id.name}" price = ${id.price} index = "${i}">`;
+      html += `<div class="square galaxy"  name="${id.name}" price = ${id.price} index = "${i}">`;
       html += `<div class="back ${id.name}" name="${id.name}" price = ${id.price}></div>`;
       html += `<div class="front"></div>`;
       html += `<img src="galaxy.png" alt="${id.name}">`;
@@ -30,37 +49,142 @@ document.addEventListener("DOMContentLoaded", function(event) {
     });
 
     // Add all the divs to the HTML
-  document.querySelector('.gameTable').innerHTML = html;
+  document.querySelector('.first-level').innerHTML = html;
 
-  console.log(document.querySelectorAll("body > div.gameTable > div.square"))
-  document.querySelectorAll('.square').forEach( oneSquare => {
+  //global variables
+
+  let firstLevel = true;
+  let secondLevel = false; 
+  let thirdLevel = false;
+
+  let lastLevel = document.querySelector('.first-level');
+
+  let selectedGalaxy;
+
+  // obteniendo el click del usuario para el primer level (Galaxias)
+  document.querySelectorAll('.galaxy').forEach( oneSquare => {
       oneSquare.onclick = function() {
 
 
-        
-        
-          let selectedGalaxy;
-          let index = oneSquare.attributes[3].value;
+          selectedGalaxy = oneSquare.getAttribute("name")
+          secondLevel = true;
+          lastLevel.classList.add('hidden-level')
 
-          
-          for(i = 0; i > allSquares.length ; i++){
-            console.log(allSquares[10])
-            
-            if(index == allSquares[i])
-            selectedGalaxy = allSquares[i].name;
+          //getting suns
+          let suns = names.filter(galaxy => 
+            galaxy.name === selectedGalaxy
+          )
+          let allsuns = suns[0].planets
 
+          console.log(allsuns)
 
-          }
-
-          console.log(selectedGalaxy)
-
+          createPlanets(allPlanets)
           
 
-          // oneSquare.classList.add("turned");
-        // const valor = oneSquare.attributes[0].value
-        // console.log(valor)
+          //getting planets
+          let planets = names.filter(galaxy => 
+            galaxy.name === selectedGalaxy
+          )
+          let allPlanets = planets[0].planets
+
+          console.log(allPlanets)
+
+          //calling functions to create planets and suns
+
+          createSuns(allsuns)
+
+          createPlanets(allPlanets)
+
+          
+        
       }
-  })    
+
+  }); // ending level de galaxias
+
+  //beginning level 2 
+
+  document.querySelectorAll('.galaxy').forEach( oneSquare => {
+    oneSquare.onclick = function() {
+
+
+        selectedGalaxy = oneSquare.getAttribute("name")
+        secondLevel = true;
+        lastLevel.classList.add('hidden-level')
+
+        //getting suns
+        let suns = names.filter(galaxy => 
+          galaxy.name === selectedGalaxy
+        )
+        let allsuns = suns[0].planets
+
+        console.log(allsuns)
+
+        createPlanets(allPlanets)
+        
+
+        //getting planets
+        let planets = names.filter(galaxy => 
+          galaxy.name === selectedGalaxy
+        )
+        let allPlanets = planets[0].planets
+
+        console.log(allPlanets)
+
+        //calling functions to create planets and suns
+
+        createSuns(allsuns)
+
+        createPlanets(allPlanets)
+
+        
+      
+    }
+
+}); // ending level de suns
+
+
+
+  //second level
+
+
+  function createSuns(allPlanets) {
+    let htmlsuns = '';
+allPlanets.forEach(sun => {
+  htmlSuns += `<div class="square"  name="${sun.name}" price = ${sun.price}>`;
+  htmlSuns += `<img src="star.png" alt="${sun.name}">`;
+  htmlSuns += `<p class="text">${sun.name}</p>`;
+  htmlSuns += `</div>`;
+}
+  )
+    console.log('this is where we create the planets')
+    console.log(allPlanets)
+    console.log(htmlPlanets)
+      // Add all the divs to the HTML
+  document.querySelector('.third-level').innerHTML = htmlPlanets;
+  }
+
+
+    
+  //third level 
+  function createPlanets(allPlanets) {
+    let htmlPlanets = '';
+allPlanets.forEach(planet => {
+  htmlPlanets += `<div class="square"  name="${planet.name}" price = ${planet.price}>`;
+  
+  htmlPlanets += `<img src="planet.png" alt="${planet.name}">`;
+  htmlPlanets += `<p class="text">${planet.name}</p>`;
+  htmlPlanets += `</div>`;
+}
+  )
+    console.log('this is where we create the planets')
+    console.log(allPlanets)
+    console.log(htmlPlanets)
+      // Add all the divs to the HTML
+  document.querySelector('.third-level').innerHTML = htmlPlanets;
+  }
+  
+
+
 
 
 
