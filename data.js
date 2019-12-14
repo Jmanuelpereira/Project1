@@ -2,7 +2,7 @@ const allSquares = [];
 
 const names = [
   {
-    name: "Pegasi",
+    name: "Alfa Romeo",
     price: -10,
     enemys: "",
     //suns start
@@ -305,7 +305,7 @@ const names = [
    // galaxy 4
 
    {
-    name: "Pegasi",
+    name: "Messier",
     price: -10,
     enemys: "",
     //suns start
@@ -406,7 +406,7 @@ const names = [
    //galaxy 5 
 
    {
-    name: "Pegasi",
+    name: "Sombrero",
     price: -10,
     enemys: "",
     //suns start
@@ -507,7 +507,7 @@ const names = [
    //galaxy 6 
 
    {
-    name: "Pegasi",
+    name: "Centaurus",
     price: -10,
     enemys: "",
     //suns start
@@ -608,7 +608,7 @@ const names = [
    //galaxy 7b
    
    {
-    name: "Pegasi",
+    name: "Pinwheel",
     price: -10,
     enemys: "",
     //suns start

@@ -54,11 +54,12 @@ document.querySelector('.start').onclick = function() {
 
   //global variables
 
-  let firstLevel = true;
-  let secondLevel = false; 
-  let thirdLevel = false;
+  let firstLevel = document.querySelector('.first-level');
+  let secondLevel = document.querySelector('.second-level');
+  let thirdLevel = document.querySelector('.first-level');
 
-  let lastLevel = document.querySelector('.first-level');
+
+
 
   let selectedGalaxy;
 
@@ -68,30 +69,26 @@ document.querySelector('.start').onclick = function() {
 
 
           selectedGalaxy = oneSquare.getAttribute("name")
-          secondLevel = true;
-          lastLevel.classList.add('hidden-level')
+          // secondLevel = true;
+          firstLevel.classList.add('hidden-level')
 
           //getting suns
           let suns = names.filter(galaxy => 
             galaxy.name === selectedGalaxy
           )
-          let allsuns = suns[0].planets
+          
+          let allsuns = suns[0].suns
 
           console.log(allsuns)
 
-          //getting planets
-          let planets = names.filter(galaxy => 
-            galaxy.name === selectedGalaxy
-          )
-          let allPlanets = 0
 
-          console.log(allPlanets)
+
 
           //calling functions to create planets and suns
 
           createSuns(allsuns)
 
-          createPlanets(allPlanets)
+          
 
       }
 
@@ -99,39 +96,20 @@ document.querySelector('.start').onclick = function() {
 
   //beginning level 2 
 
-  document.querySelectorAll('.start').forEach( start => {
+  document.querySelectorAll('.star').forEach( start => {
     start.onclick = function() {
 
 
-        selectedGalaxy = start.getAttribute("name")
-        secondLevel = true;
-        lastLevel.classList.add('hidden-level')
+        selectedStart = start.getAttribute("name")
+        console.log("works")
+        secondLevel.classList.add('hidden-level')
 
-        //getting suns
-        let suns = names.filter(galaxy => 
-          galaxy.name === selectedGalaxy
-        )
-        let allsuns = suns[0].planets
+            //getting planets
+            let planets = names.filter(galaxy => 
+            galaxy.name === selectedGalaxy)
+            let allPlanets = planets;
 
-        console.log(allsuns + "este")
-
-        
-
-        // //getting planets
-        // let planets = names.filter(galaxy => 
-        //   galaxy.name === selectedGalaxy
-        // )
-        // console.log(planets)
-        // // let allPlanets = planets[0].planets.name
-
-        // console.log(allPlanets)
-
-        // //calling functions to create planets and suns
-
-          createSuns(allsuns)
-
-        // createPlanets(allPlanets)
-
+            createPlanets(allPlanets)
         
       
     }
@@ -143,17 +121,17 @@ document.querySelector('.start').onclick = function() {
   //second level
 
   function createSuns(allsuns) {
-//     let htmlsuns = '';
-//     allsuns.forEach(sun => {
-//   htmlSuns += `<div class="square"  name="${sun.name}" price = ${sun.price}>`;
-//   htmlSuns += `<img src="star.png" alt="${sun.name}">`;
-//   htmlSuns += `<p class="text">${sun.name}</p>`;
-//   htmlSuns += `</div>`;
-// }
-//   )
+    let htmlSuns = '';
+    allsuns.forEach(sun => {
+  htmlSuns += `<div class="square star"  name="${sun.name}" price = ${sun.price}>`;
+  htmlSuns += `<img src="star.png" alt="${sun.name}">`;
+  htmlSuns += `<p class="text">${sun.name}</p>`;
+  htmlSuns += `</div>`;
+}
+  )
 
-//       // Add all the divs to the HTML
-//   document.querySelector('.second-level').innerHTML = htmlsuns;
+      // Add all the divs to the HTML
+  document.querySelector('.second-level').innerHTML = htmlSuns;
   }
 
   //third level 
