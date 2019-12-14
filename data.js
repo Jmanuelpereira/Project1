@@ -5,6 +5,7 @@ const names = [
     name: "Pegasi",
     price: -10,
     enemys: "",
+    //suns start
     suns: [
 
       {
@@ -12,6 +13,7 @@ const names = [
       old: 4567,
       description: " This sun is so hot but still have some planets with good condition to support life",
       price:70,
+      //planets start
       planets: [
         {
         name: "ARD",
@@ -32,7 +34,7 @@ const names = [
         img: "planet.png"
       }, 
       
-      ]//planets end
+      ]//planet end
 
       },
 
@@ -61,7 +63,7 @@ const names = [
           img: "planet.png"
         }, 
         
-        ]//planets end
+        ]//planet end
   
         },
 
@@ -90,7 +92,7 @@ const names = [
             img: "planet.png"
           }, 
           
-          ]//planets end
+          ]//planet end
     
           },
 
@@ -98,16 +100,21 @@ const names = [
 
    },
 
+   //galaxy 2
+
    {
     name: "Andromeda",
-    price: -10,
+    price: 50,
     enemys: "",
+    //suns start
     suns: [
 
       {
-      name: "Pegasi B51",
-      old: 4567,
+      name: "Enana Blanca",
+      old: 2356,
       description: " This sun is so hot but still have some planets with good condition to support life",
+      price:70,
+      //planets start
       planets: [
         {
         name: "ARD",
@@ -128,24 +135,87 @@ const names = [
         img: "planet.png"
       }, 
       
-      ]//planets end
+      ]//planet end
 
       },
+
+      {
+        name: "Alternative",
+        old: 4567,
+        description: " This sun is so hot but still have some planets with good condition to support life",
+        price:70,
+        planets: [
+          {
+          name: "ARD",
+          price: -50,
+          sustainable: true,
+          img: "planet.png"
+        }, 
+        {
+          name: "ARD",
+          price: -50,
+          sustainable: true,
+          img: "planet.png"
+        }, 
+        {
+          name: "ARD",
+          price: -50,
+          sustainable: true,
+          img: "planet.png"
+        }, 
+        
+        ]//planet end
+  
+        },
+
+        {
+          name: "Alejandria",
+          old: 4567,
+          description: " This sun is so hot but still have some planets with good condition to support life",
+          price:70,
+          planets: [
+            {
+            name: "ARD",
+            price: -50,
+            sustainable: true,
+            img: "planet.png"
+          }, 
+          {
+            name: "ARD",
+            price: -50,
+            sustainable: true,
+            img: "planet.png"
+          }, 
+          {
+            name: "ARD",
+            price: -50,
+            sustainable: true,
+            img: "planet.png"
+          }, 
+          
+          ]//planet end
+    
+          },
 
     ]//suns end
 
    },
 
+   //galaxy 3 
+
    {
-    name: "Andromeda",
+    name: "Pegasi",
     price: -10,
     enemys: "",
+    //suns start
     suns: [
 
       {
       name: "Pegasi B51",
       old: 4567,
       description: " This sun is so hot but still have some planets with good condition to support life",
+      price:70,
+      //planets start
       planets: [
         {
         name: "ARD",
@@ -166,24 +236,87 @@ const names = [
         img: "planet.png"
       }, 
       
-      ]//planets end
+      ]//planet end
 
       },
+
+      {
+        name: "Alternative",
+        old: 4567,
+        description: " This sun is so hot but still have some planets with good condition to support life",
+        price:70,
+        planets: [
+          {
+          name: "ARD",
+          price: -50,
+          sustainable: true,
+          img: "planet.png"
+        }, 
+        {
+          name: "ARD",
+          price: -50,
+          sustainable: true,
+          img: "planet.png"
+        }, 
+        {
+          name: "ARD",
+          price: -50,
+          sustainable: true,
+          img: "planet.png"
+        }, 
+        
+        ]//planet end
+  
+        },
+
+        {
+          name: "Alejandria",
+          old: 4567,
+          description: " This sun is so hot but still have some planets with good condition to support life",
+          price:70,
+          planets: [
+            {
+            name: "ARD",
+            price: -50,
+            sustainable: true,
+            img: "planet.png"
+          }, 
+          {
+            name: "ARD",
+            price: -50,
+            sustainable: true,
+            img: "planet.png"
+          }, 
+          {
+            name: "ARD",
+            price: -50,
+            sustainable: true,
+            img: "planet.png"
+          }, 
+          
+          ]//planet end
+    
+          },
 
     ]//suns end
 
    },
 
+   // galaxy 4
+
    {
-    name: "Andromeda",
+    name: "Pegasi",
     price: -10,
     enemys: "",
+    //suns start
     suns: [
 
       {
       name: "Pegasi B51",
       old: 4567,
       description: " This sun is so hot but still have some planets with good condition to support life",
+      price:70,
+      //planets start
       planets: [
         {
         name: "ARD",
@@ -204,24 +337,87 @@ const names = [
         img: "planet.png"
       }, 
       
-      ]//planets end
+      ]//planet end
 
       },
+
+      {
+        name: "Alternative",
+        old: 4567,
+        description: " This sun is so hot but still have some planets with good condition to support life",
+        price:70,
+        planets: [
+          {
+          name: "ARD",
+          price: -50,
+          sustainable: true,
+          img: "planet.png"
+        }, 
+        {
+          name: "ARD",
+          price: -50,
+          sustainable: true,
+          img: "planet.png"
+        }, 
+        {
+          name: "ARD",
+          price: -50,
+          sustainable: true,
+          img: "planet.png"
+        }, 
+        
+        ]//planet end
+  
+        },
+
+        {
+          name: "Alejandria",
+          old: 4567,
+          description: " This sun is so hot but still have some planets with good condition to support life",
+          price:70,
+          planets: [
+            {
+            name: "ARD",
+            price: -50,
+            sustainable: true,
+            img: "planet.png"
+          }, 
+          {
+            name: "ARD",
+            price: -50,
+            sustainable: true,
+            img: "planet.png"
+          }, 
+          {
+            name: "ARD",
+            price: -50,
+            sustainable: true,
+            img: "planet.png"
+          }, 
+          
+          ]//planet end
+    
+          },
 
     ]//suns end
 
    },
 
+   //galaxy 5 
+
    {
-    name: "Andromeda",
+    name: "Pegasi",
     price: -10,
     enemys: "",
+    //suns start
     suns: [
 
       {
       name: "Pegasi B51",
       old: 4567,
       description: " This sun is so hot but still have some planets with good condition to support life",
+      price:70,
+      //planets start
       planets: [
         {
         name: "ARD",
@@ -242,24 +438,188 @@ const names = [
         img: "planet.png"
       }, 
       
-      ]//planets end
+      ]//planet end
 
       },
+
+      {
+        name: "Alternative",
+        old: 4567,
+        description: " This sun is so hot but still have some planets with good condition to support life",
+        price:70,
+        planets: [
+          {
+          name: "ARD",
+          price: -50,
+          sustainable: true,
+          img: "planet.png"
+        }, 
+        {
+          name: "ARD",
+          price: -50,
+          sustainable: true,
+          img: "planet.png"
+        }, 
+        {
+          name: "ARD",
+          price: -50,
+          sustainable: true,
+          img: "planet.png"
+        }, 
+        
+        ]//planet end
+  
+        },
+
+        {
+          name: "Alejandria",
+          old: 4567,
+          description: " This sun is so hot but still have some planets with good condition to support life",
+          price:70,
+          planets: [
+            {
+            name: "ARD",
+            price: -50,
+            sustainable: true,
+            img: "planet.png"
+          }, 
+          {
+            name: "ARD",
+            price: -50,
+            sustainable: true,
+            img: "planet.png"
+          }, 
+          {
+            name: "ARD",
+            price: -50,
+            sustainable: true,
+            img: "planet.png"
+          }, 
+          
+          ]//planet end
+    
+          },
 
     ]//suns end
 
    },
+
+   //galaxy 6 
+
+   {
+    name: "Pegasi",
+    price: -10,
+    enemys: "",
+    //suns start
+    suns: [
+
+      {
+      name: "Pegasi B51",
+      old: 4567,
+      description: " This sun is so hot but still have some planets with good condition to support life",
+      price:70,
+      //planets start
+      planets: [
+        {
+        name: "ARD",
+        price: -50,
+        sustainable: true,
+        img: "planet.png"
+      }, 
+      {
+        name: "ARD",
+        price: -50,
+        sustainable: true,
+        img: "planet.png"
+      }, 
+      {
+        name: "ARD",
+        price: -50,
+        sustainable: true,
+        img: "planet.png"
+      }, 
+      
+      ]//planet end
+
+      },
+
+      {
+        name: "Alternative",
+        old: 4567,
+        description: " This sun is so hot but still have some planets with good condition to support life",
+        price:70,
+        planets: [
+          {
+          name: "ARD",
+          price: -50,
+          sustainable: true,
+          img: "planet.png"
+        }, 
+        {
+          name: "ARD",
+          price: -50,
+          sustainable: true,
+          img: "planet.png"
+        }, 
+        {
+          name: "ARD",
+          price: -50,
+          sustainable: true,
+          img: "planet.png"
+        }, 
+        
+        ]//planet end
+  
+        },
+
+        {
+          name: "Alejandria",
+          old: 4567,
+          description: " This sun is so hot but still have some planets with good condition to support life",
+          price:70,
+          planets: [
+            {
+            name: "ARD",
+            price: -50,
+            sustainable: true,
+            img: "planet.png"
+          }, 
+          {
+            name: "ARD",
+            price: -50,
+            sustainable: true,
+            img: "planet.png"
+          }, 
+          {
+            name: "ARD",
+            price: -50,
+            sustainable: true,
+            img: "planet.png"
+          }, 
+          
+          ]//planet end
+    
+          },
+
+    ]//suns end
+
+   },
+
+   //galaxy 7b
    
    {
-    name: "Andromeda",
+    name: "Pegasi",
     price: -10,
     enemys: "",
+    //suns start
     suns: [
 
       {
       name: "Pegasi B51",
       old: 4567,
       description: " This sun is so hot but still have some planets with good condition to support life",
+      price:70,
+      //planets start
       planets: [
         {
         name: "ARD",
@@ -280,51 +640,72 @@ const names = [
         img: "planet.png"
       }, 
       
-      ]//planets end
+      ]//planet end
 
       },
 
-    ]//suns end
-
-   },
-
-   {
-    name: "Andromeda",
-    price: -10,
-    enemys: "",
-    suns: [
-
       {
-      name: "Pegasi B51",
-      old: 4567,
-      description: " This sun is so hot but still have some planets with good condition to support life",
-      planets: [
+        name: "Alternative",
+        old: 4567,
+        description: " This sun is so hot but still have some planets with good condition to support life",
+        price:70,
+        planets: [
+          {
+          name: "ARD",
+          price: -50,
+          sustainable: true,
+          img: "planet.png"
+        }, 
         {
-        name: "ARD",
-        price: -50,
-        sustainable: true,
-        img: "planet.png"
-      }, 
-      {
-        name: "ARD",
-        price: -50,
-        sustainable: true,
-        img: "planet.png"
-      }, 
-      {
-        name: "ARD",
-        price: -50,
-        sustainable: true,
-        img: "planet.png"
-      }, 
-      
-      ]//planets end
+          name: "ARD",
+          price: -50,
+          sustainable: true,
+          img: "planet.png"
+        }, 
+        {
+          name: "ARD",
+          price: -50,
+          sustainable: true,
+          img: "planet.png"
+        }, 
+        
+        ]//planet end
+  
+        },
 
-      },
+        {
+          name: "Alejandria",
+          old: 4567,
+          description: " This sun is so hot but still have some planets with good condition to support life",
+          price:70,
+          planets: [
+            {
+            name: "ARD",
+            price: -50,
+            sustainable: true,
+            img: "planet.png"
+          }, 
+          {
+            name: "ARD",
+            price: -50,
+            sustainable: true,
+            img: "planet.png"
+          }, 
+          {
+            name: "ARD",
+            price: -50,
+            sustainable: true,
+            img: "planet.png"
+          }, 
+          
+          ]//planet end
+    
+          },
 
     ]//suns end
 
    },
+
 
    
   ]

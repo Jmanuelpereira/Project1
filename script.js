@@ -14,11 +14,9 @@ genSquares();
 
 const nuevoGame = new spaceGame(allSquares);
 
-
-
 document.addEventListener("DOMContentLoaded", function(event) { 
 
-
+  //creating timer
 
 document.querySelector('.start').onclick = function() {
 
@@ -35,8 +33,10 @@ document.querySelector('.start').onclick = function() {
 
 }
 
+//end timer function
 
 
+//creating galaxys in html
     let html = '';
     nuevoGame.square.forEach((id, i) => {
       
@@ -48,8 +48,9 @@ document.querySelector('.start').onclick = function() {
       html += `</div>`;
     });
 
-    // Add all the divs to the HTML
+    // Add all the divs to the HTML for first level
   document.querySelector('.first-level').innerHTML = html;
+
 
   //global variables
 
@@ -78,14 +79,11 @@ document.querySelector('.start').onclick = function() {
 
           console.log(allsuns)
 
-          createPlanets(allPlanets)
-          
-
           //getting planets
           let planets = names.filter(galaxy => 
             galaxy.name === selectedGalaxy
           )
-          let allPlanets = planets[0].planets
+          let allPlanets = 0
 
           console.log(allPlanets)
 
@@ -95,19 +93,17 @@ document.querySelector('.start').onclick = function() {
 
           createPlanets(allPlanets)
 
-          
-        
       }
 
   }); // ending level de galaxias
 
   //beginning level 2 
 
-  document.querySelectorAll('.galaxy').forEach( oneSquare => {
-    oneSquare.onclick = function() {
+  document.querySelectorAll('.start').forEach( start => {
+    start.onclick = function() {
 
 
-        selectedGalaxy = oneSquare.getAttribute("name")
+        selectedGalaxy = start.getAttribute("name")
         secondLevel = true;
         lastLevel.classList.add('hidden-level')
 
@@ -117,24 +113,24 @@ document.querySelector('.start').onclick = function() {
         )
         let allsuns = suns[0].planets
 
-        console.log(allsuns)
+        console.log(allsuns + "este")
 
-        createPlanets(allPlanets)
         
 
-        //getting planets
-        let planets = names.filter(galaxy => 
-          galaxy.name === selectedGalaxy
-        )
-        let allPlanets = planets[0].planets
+        // //getting planets
+        // let planets = names.filter(galaxy => 
+        //   galaxy.name === selectedGalaxy
+        // )
+        // console.log(planets)
+        // // let allPlanets = planets[0].planets.name
 
-        console.log(allPlanets)
+        // console.log(allPlanets)
 
-        //calling functions to create planets and suns
+        // //calling functions to create planets and suns
 
-        createSuns(allsuns)
+          createSuns(allsuns)
 
-        createPlanets(allPlanets)
+        // createPlanets(allPlanets)
 
         
       
@@ -146,42 +142,39 @@ document.querySelector('.start').onclick = function() {
 
   //second level
 
+  function createSuns(allsuns) {
+//     let htmlsuns = '';
+//     allsuns.forEach(sun => {
+//   htmlSuns += `<div class="square"  name="${sun.name}" price = ${sun.price}>`;
+//   htmlSuns += `<img src="star.png" alt="${sun.name}">`;
+//   htmlSuns += `<p class="text">${sun.name}</p>`;
+//   htmlSuns += `</div>`;
+// }
+//   )
 
-  function createSuns(allPlanets) {
-    let htmlsuns = '';
-allPlanets.forEach(sun => {
-  htmlSuns += `<div class="square"  name="${sun.name}" price = ${sun.price}>`;
-  htmlSuns += `<img src="star.png" alt="${sun.name}">`;
-  htmlSuns += `<p class="text">${sun.name}</p>`;
-  htmlSuns += `</div>`;
-}
-  )
-    console.log('this is where we create the planets')
-    console.log(allPlanets)
-    console.log(htmlPlanets)
-      // Add all the divs to the HTML
-  document.querySelector('.third-level').innerHTML = htmlPlanets;
+//       // Add all the divs to the HTML
+//   document.querySelector('.second-level').innerHTML = htmlsuns;
   }
 
-
-    
   //third level 
   function createPlanets(allPlanets) {
-    let htmlPlanets = '';
-allPlanets.forEach(planet => {
-  htmlPlanets += `<div class="square"  name="${planet.name}" price = ${planet.price}>`;
-  
-  htmlPlanets += `<img src="planet.png" alt="${planet.name}">`;
-  htmlPlanets += `<p class="text">${planet.name}</p>`;
-  htmlPlanets += `</div>`;
-}
-  )
-    console.log('this is where we create the planets')
-    console.log(allPlanets)
-    console.log(htmlPlanets)
-      // Add all the divs to the HTML
-  document.querySelector('.third-level').innerHTML = htmlPlanets;
+//     let htmlPlanets = '';
+// allPlanets.forEach(planet => {
+//   htmlPlanets += `<div class="square"  name="${planet.name}" price = ${planet.price}>`;
+//   htmlPlanets += `<img src="planet.png" alt="${planet.name}">`;
+//   htmlPlanets += `<p class="text">${planet.name}</p>`;
+//   htmlPlanets += `</div>`;
+// }
+//   )
+//     console.log('this is where we create the planets')
+//     console.log(allPlanets)
+//     console.log(htmlPlanets)
+//       // Add all the divs to the HTML
+//   document.querySelector('.third-level').innerHTML = htmlPlanets;
   }
+
+
+
   
 
 
