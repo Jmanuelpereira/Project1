@@ -3,13 +3,13 @@ const allSquares = [];
 const names = [
   {
     name: "Alfa Romeo",
-    price: -10,
+    price: 350,
     enemys: "",
     //suns start
     suns: [
 
       {
-      name: "Pegasi B51",
+      name: "Canopus",
       old: 4567,
       description: " This sun is so hot but still have some planets with good condition to support life",
       price:70,
@@ -17,19 +17,19 @@ const names = [
       planets: [
         {
         name: "ARD",
-        price: -50,
+        price: 50,
         sustainable: true,
         img: "planet.png"
       }, 
       {
         name: "ARD",
-        price: -50,
+        price: 50,
         sustainable: true,
         img: "planet.png"
       }, 
       {
         name: "ARD",
-        price: -50,
+        price: 50,
         sustainable: true,
         img: "planet.png"
       }, 
@@ -39,7 +39,7 @@ const names = [
       },
 
       {
-        name: "Alternative",
+        name: "Rigel",
         old: 4567,
         description: " This sun is so hot but still have some planets with good condition to support life",
         price:70,
@@ -68,7 +68,7 @@ const names = [
         },
 
         {
-          name: "Alejandria",
+          name: "Sirius",
           old: 4567,
           description: " This sun is so hot but still have some planets with good condition to support life",
           price:70,
@@ -709,3 +709,5 @@ const names = [
 
    
   ]
+
+  let initialDescription = "It is the year 2055 human beings have finished all the natural resources of our planets and we have to make the decision to go to the search for a new home, we do not have all the information because during the take off the computer engineering on board died and the data It is confusing but we know that in one of these galaxies there is a habitable planet, help us find it, but fast that time does not stop. <br> <br> We have little fuel and little time choose options on the table wisely.";
