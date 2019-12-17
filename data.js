@@ -5,13 +5,14 @@ const names = [
     name: "Alfa Romeo",
     price: 350,
     enemys: "",
+    description: 'This galaxy is no muy conocida',
     //suns start
     suns: [
 
       {
       name: "Canopus",
       old: 4567,
-      description: " This sun is so hot but still have some planets with good condition to support life",
+      description: " This sun is so hot but still have some planets TEST with good condition to support life",
       price:70,
       //planets start
       planets: [
@@ -41,7 +42,7 @@ const names = [
       {
         name: "Rigel",
         old: 4567,
-        description: " This sun is so hot but still have some planets with good condition to support life",
+        description: " This sun is so cold but there some data TESTO about life behind icebergs on the planet.",
         price:70,
         planets: [
           {
@@ -106,6 +107,7 @@ const names = [
     name: "Andromeda",
     price: 50,
     enemys: "",
+    description: 'Esta otra menos',
     //suns start
     suns: [
 
@@ -207,6 +209,7 @@ const names = [
     name: "Pegasi",
     price: -10,
     enemys: "",
+    description: 'Esta podria servir',
     //suns start
     suns: [
 
@@ -308,6 +311,7 @@ const names = [
     name: "Messier",
     price: -10,
     enemys: "",
+    description: 'Esta tal vez es una mierda',
     //suns start
     suns: [
 
@@ -409,6 +413,7 @@ const names = [
     name: "Sombrero",
     price: -10,
     enemys: "",
+    description: '',
     //suns start
     suns: [
 
@@ -510,6 +515,7 @@ const names = [
     name: "Centaurus",
     price: -10,
     enemys: "",
+    description: '',
     //suns start
     suns: [
 
@@ -611,6 +617,7 @@ const names = [
     name: "Pinwheel",
     price: -10,
     enemys: "",
+    description: '',
     //suns start
     suns: [
 

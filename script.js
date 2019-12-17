@@ -3,10 +3,18 @@
   let firstLevel = document.querySelector('.first-level');
   let secondLevel = document.querySelector('.second-level');
   let thirdLevel = document.querySelector('.third-level');
+  let descrip = document.querySelector(".description");
 
   let selectedGalaxy;
   let iniFuel = 100;
   let costFuel = 0;
+
+
+  //hover things
+
+  let galaxy;
+  let sun;
+  let planet;
 
 //some util functions 
 
@@ -56,7 +64,7 @@ document.querySelector('.start').onclick = function() {
 
   setInterval(function(){
     timer--
-    console.log(timer)
+
     document.querySelector(".timer").innerHTML = timer;
     if (timer === 0) {
       return "Game Over"
@@ -69,6 +77,7 @@ document.querySelector('.start').onclick = function() {
 
 //creating galaxys
 let html = '';
+
 nuevoGame.square.forEach((id, i) => {
   
   html += `<div class="square galaxy"  name="${id.name}" price = ${id.price} index = "${i}">`;
@@ -121,6 +130,24 @@ allPlanets.forEach((planet, id) => {
 
   // obteniendo el click del usuario para el primer level (Galaxias)
   document.querySelectorAll('.galaxy').forEach( oneSquare => {
+
+      oneSquare.addEventListener("mouseover", function( event ) { 
+
+
+        //  descrip.innerHTML = oneSquare.insertAdjacentHTML
+        let selectedGalaxy = oneSquare.getAttribute("name")
+        
+        let galDes = names.filter(galaxy => 
+          galaxy.name === selectedGalaxy
+          )
+          
+
+          descrip.innerHTML = `<h4>${galDes[0].description}</h4>`
+          
+   
+     }) 
+
+
       oneSquare.onclick = function() {
 
         
@@ -132,6 +159,7 @@ allPlanets.forEach((planet, id) => {
         let suns = names.filter(galaxy => 
           galaxy.name === selectedGalaxy
           )
+          
           
           let allsuns = suns[0].suns   
           
@@ -146,12 +174,34 @@ allPlanets.forEach((planet, id) => {
 
       }
 
-  }); // ending level de galaxias
+  })
+  
+  
+  // ending level de galaxias
 
   
   
   //beginning level 2 
+
+
 const callStarts = () => document.querySelectorAll('.star').forEach( start => {
+
+
+  start.addEventListener("mouseover", function( event ) { 
+
+    
+    let sunDes = names.filter(galaxy => 
+      galaxy.name === selectedGalaxy
+      )
+
+      console.log(sunDes[0].suns[0].description)
+      
+      
+      descrip.innerHTML = `<h4>${sunDes[0].suns[0].description}</h4>`
+      
+
+ }) 
+
     start.onclick = function() {
 
       
@@ -178,9 +228,9 @@ const callStarts = () => document.querySelectorAll('.star').forEach( start => {
 
 //ADDING INITIAL DATA TO HTML
 
-let description = document.querySelector('.description');
+// let description = document.querySelector('.description');
 
-description.innerHTML = initialDescription;
+// description.innerHTML = initialDescription;
 
 
 

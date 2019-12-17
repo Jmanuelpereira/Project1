@@ -86,6 +86,10 @@ body {
   .controllBlock {
 
   }
+  .astro {
+    width: 350px;
+
+  }
 
 
   /* Levels class */
