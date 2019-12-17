@@ -103,9 +103,9 @@ document.querySelector('.first-level').innerHTML = html;
   //creating planets 
   function createPlanets(allPlanets) {
     let htmlPlanets = '';
-allPlanets.forEach(planet => {
+allPlanets.forEach((planet, id) => {
   htmlPlanets += `<div class="square"  name="${planet.name}" price = ${planet.price}>`;
-  htmlPlanets += `<img src="planet.png" alt="${planet.name}">`;
+  htmlPlanets += `<img src="planet${id}.png" alt="${planet.name}">`;
   htmlPlanets += `<p class="text">${planet.name}</p>`;
   htmlPlanets += `</div>`;
 }
@@ -162,7 +162,7 @@ const callStarts = () => document.querySelectorAll('.star').forEach( start => {
             //getting planets
             let planets = names.filter(galaxy => 
             galaxy.name === selectedGalaxy)
-            let allPlanets = planets;
+            let allPlanets = planets[0].suns[0].planets
 
             //option price on fuel
             document.querySelector(".fuel").innerHTML = actualFuel(planets[0].price)

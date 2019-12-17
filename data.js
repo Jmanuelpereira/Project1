@@ -20,19 +20,19 @@ const names = [
         price: 50,
         sustainable: true,
         img: "planet.png"
-      }, 
+      },
       {
         name: "ARD",
         price: 50,
         sustainable: true,
         img: "planet.png"
-      }, 
+      },
       {
         name: "ARD",
         price: 50,
         sustainable: true,
         img: "planet.png"
-      }, 
+      },
       
       ]//planet end
 
