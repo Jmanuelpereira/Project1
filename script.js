@@ -15,6 +15,33 @@
   let galaxy;
   let sun;
   let planet;
+  
+  document.addEventListener("DOMContentLoaded", function(event) { 
+  
+    //creating timer
+  
+  document.querySelector('.start').onclick = function() {
+  
+    
+  
+  let startButton = document.querySelector('.start');
+  startButton.classList.add('hidden-level')
+  
+  
+    let timer = 300
+  
+    setInterval(function(){
+      timer--
+  
+      document.querySelector(".timer").innerHTML = timer;
+      if (timer === 0) {
+        return "Game Over"
+      }
+    }, 1000)
+
+
+
+
 
 //some util functions 
 
@@ -49,29 +76,8 @@ genSquares();
 
 const nuevoGame = new spaceGame(allSquares);
 
-document.addEventListener("DOMContentLoaded", function(event) { 
-
-  //creating timer
-
-document.querySelector('.start').onclick = function() {
-
-  
 
 
-
-
-  let timer = 300
-
-  setInterval(function(){
-    timer--
-
-    document.querySelector(".timer").innerHTML = timer;
-    if (timer === 0) {
-      return "Game Over"
-    }
-  }, 1000)
-
-}
 
 //CREATION OF GALAXYS, SUNS AND PLANETS HTML
 
@@ -194,7 +200,7 @@ const callStarts = () => document.querySelectorAll('.star').forEach( start => {
       galaxy.name === selectedGalaxy
       )
 
-      console.log(sunDes[0].suns[0].description)
+      console.log(sunDes.suns.description)
       
       
       descrip.innerHTML = `<h4>${sunDes[0].suns[0].description}</h4>`
@@ -236,7 +242,7 @@ const callStarts = () => document.querySelectorAll('.star').forEach( start => {
 
 
   
-
+}
 
   
 

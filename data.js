@@ -40,6 +40,36 @@ const names = [
       },
 
       {
+        name: "Canopus",
+        old: 4567,
+        description: " This sun is so hot but still have some planets TEST with good condition to support life",
+        price:70,
+        //planets start
+        planets: [
+          {
+          name: "ARD",
+          price: 50,
+          sustainable: true,
+          img: "planet.png"
+        },
+        {
+          name: "ARD",
+          price: 50,
+          sustainable: true,
+          img: "planet.png"
+        },
+        {
+          name: "ARD",
+          price: 50,
+          sustainable: true,
+          img: "planet.png"
+        },
+        
+        ]//planet end
+  
+        },
+
+      {
         name: "Rigel",
         old: 4567,
         description: " This sun is so cold but there some data TESTO about life behind icebergs on the planet.",
