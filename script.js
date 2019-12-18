@@ -200,7 +200,7 @@ const callStarts = () => document.querySelectorAll('.star').forEach( start => {
       galaxy.name === selectedGalaxy
       )
 
-      console.log(sunDes.suns.description)
+      // console.log(sunDes.suns.description)
       
       
       descrip.innerHTML = `<h4>${sunDes[0].suns[0].description}</h4>`
