@@ -11,9 +11,9 @@
 
   //hover things
 
-  let galaxy;
-  let sun;
-  let planet;  
+  // let galaxy;
+  // let sun;
+  // let planet;  
   
   document.addEventListener("DOMContentLoaded", function(event) { 
 
@@ -64,9 +64,6 @@ function actualFuel(fuelCost){
   return iniFuel
   }
   else 
-  setTimeout(function(){
-    document.location.reload()
-  }, 1000);
     return alert("You dont have more fuel, YOU LOSE!")
 
 }
@@ -188,6 +185,7 @@ allPlanets.forEach((planet, id) => {
 
           callStarts();
 
+          showPlanetsInfo();
 
       }
 
@@ -216,6 +214,8 @@ const callStarts = () => document.querySelectorAll('.star').forEach(( start, id)
       <ul>
       ` 
 
+      showPlanetsInfo();
+
  }) 
 
     start.onclick = function() {
@@ -223,73 +223,94 @@ const callStarts = () => document.querySelectorAll('.star').forEach(( start, id)
         selectedStart = start.getAttribute("name")
         secondLevel.classList.add('hidden-level')
 
-
-
             //getting planets
             let planets = names.filter(galaxy => 
             galaxy.name === selectedGalaxy)
             let allPlanets = planets[0].suns[id].planets
 
-            console.log(allPlanets)
-
             //option price on fuel
-            document.querySelector(".fuel").innerHTML = actualFuel(planets[id].price)
+            document.querySelector(".fuel").innerHTML = actualFuel(planets[0].suns[id].price)
             createPlanets(allPlanets) 
-
             showPlanetsInfo();
     }
 
 }); // ending level de suns
 
+
+
 const showPlanetsInfo = () => document.querySelectorAll('.planet').forEach((planet, id) => {
 
+    
   planet.addEventListener("mouseover", function( event ) { 
-      
-      let PlaDes = names.filter(galaxy => 
-        galaxy.name === selectedGalaxy
-        )
-        console.log("test")
-        console.log(PlaDes[0].suns[0].planets[id].description)
-        
-        descrip.innerHTML = `<h4>${PlaDes[0].suns[0].planets[id].description}</h4>`
-        
 
-    })//end mouseover 
-
-    //onclick planet function
-    
-    planet.onclick = function() {
-
+    let plaDes = names.filter(galaxy => 
+      galaxy.name === selectedGalaxy)
    
+      descrip.innerHTML = 
+
+      `
+      <ul style="list-style:none;">
+      <li><h2>${plaDes[0].suns[0].planets[id].name}</h2></li>
+      <li><h4>${plaDes[0].suns[0].planets[id].description}</h4></li>
+      <br>
+      <li><b>Price:</b> ${plaDes[0].suns[0].planets[id].price} fuel</li>
+      <li><b>Age:</b> ${plaDes[0].suns[0].planets[id].size}</li>
+      <li></li>
+      <ul>
+      ` 
+
+
+  })//end mouseover 
+
+  
+  planet.onclick = function() {
+
+
+    let plaDes = names.filter(galaxy => 
+      galaxy.name === selectedGalaxy)
+
+    console.log(plaDes[0].suns[0].planets[id].sustainable)
+
     
-      selectedSPlanet = planet.getAttribute("name")
-      
-          // getting planets
-          let planets = names.filter(galaxy => 
-          galaxy.name === selectedGalaxy)
-          let allPlanets = planets[0].suns[0].planets
 
-          if(allPlanets.sustainable === true){
-
-            return alert("We did it! We found the right one!")
-          }
-
-          console.log("mierda")
-    
-          // option price on fuel
-      
-          document.querySelector(".fuel").innerHTML = actualFuel(planets[id].price)
-      
-
-          actualFuel(actualFuel(planets[0].price))
+    if(plaDes[0].suns[0].planets[id].sustainable === true){
+      setTimeout(function(){
+        document.location.reload()
+      }, 1000);
+      return alert("You won")
+    }
+    if(plaDes[0].suns[0].planets[id].sustainable === false){
+      setTimeout(function(){
+        document.location.reload()
+      }, 1000);
+      return alert("You lose, we dont more fuel and you choose a wrong planet :(")
     }
 
-});//end planets
+    selectedPlanet = planet.getAttribute("name")
+    
 
+        //getting planets
+        let planets = names.filter(galaxy => 
+        galaxy.name === selectedGalaxy)
+        let allPlanets = planets[0].suns[id].planets
+      
+
+        //option price on fuel
+        document.querySelector(".fuel").innerHTML = actualFuel(350)
+    
+}
+  
+  
+  
+
+        
+
+
+});
 
 
   
-}//end onclick function
+}//end
 
   
 

@@ -14,7 +14,7 @@ const names = [
       name: "Alfa Centauri",
       old: 4567,
       description: "It consists of a system of 3 gravitationally joined stars. A ternary system of stars orbiting a center of mass, Alpha Centauri A and Alpha Centauri B, plus a third red dwarf star, Proxima Centauri, which orbits around 2 stars Alpha Centauri A and B.",
-      price:70,
+      price:150,
       //planets start
       planets: [
         {
@@ -22,27 +22,27 @@ const names = [
         price: 100,
         sustainable: true,
         img: "planet.png",
-        description: "",
+        description: "We dont know anything about this weird planet.",
         atmosfera: "",
-        size: ""
+        size: "Large"
       },
       {
         name: "ARD-B13",
         price: 100,
         sustainable: true,
         img: "planet.png",
-        description: "",
-        atmosfera: "",
-        size: ""
+        description: "Many consider this the perfect candidate but we do not know if the data is correct.",
+        atmosfera: "Oxigeno",
+        size: "Small"
       },
       {
         name: "JGP-120",
         price: 100,
         sustainable: true,
         img: "planet.png",
-        description: "",
-        atmosfera: "",
-        size: ""
+        description: "This planet is a chaos only receives light a few times a year, but nevertheless we know that life can be on a planet with these characteristics under the ground.",
+        atmosfera: "Carbono",
+        size: "Small"
       },
       
       ]//planet end
@@ -51,9 +51,9 @@ const names = [
 
       {
         name: "Canopus",
-        old: 4567,
+        old: 5890,
         description: " This sun is so hot but still have some planets TEST with good condition to support life",
-        price:70,
+        price:120,
         //planets start
         planets: [
           {
@@ -90,9 +90,9 @@ const names = [
 
       {
         name: "Rigel",
-        old: 4567,
+        old: 1268,
         description: " This sun is so cold but there some data TESTO about life behind icebergs on the planet.",
-        price:70,
+        price:100,
         planets: [
           {
             name: "ZRTX-52",
@@ -675,9 +675,9 @@ const names = [
         price: 100,
         sustainable: true,
         img: "planet.png",
-        description: "",
+        description: "This planet is as rare as it is imperfect but it could have some different and interesting species of life.",
         atmosfera: "",
-        size: ""
+        size: "Large"
       }, 
       {
         name: "ALG-52Z",
@@ -686,7 +686,7 @@ const names = [
         img: "planet.png",
         description: "",
         atmosfera: "",
-        size: ""
+        size: "Small"
       }, 
       
       ]//planet end
@@ -706,16 +706,16 @@ const names = [
           img: "planet.png",
           description: "",
           atmosfera: "",
-          size: ""
+          size: "Small"
         }, 
         {
-          name: "ExoPlanet 50",
+          name: "ExoPlanet50",
           price: 50,
-          sustainable: false,
+          sustainable: true,
           img: "planet.png",
-          description: "This planet",
+          description: "Exoplanets are known to have almost all the components necessary for life and for the development of new species.",
           atmosfera: "",
-          size: ""
+          size: "Medium"
         }, 
         {
           name: "Cafetal Moon",
@@ -724,7 +724,7 @@ const names = [
           img: "planet.png",
           description: "",
           atmosfera: "",
-          size: ""
+          size: "Medium"
         }, 
         
         ]//planet end
