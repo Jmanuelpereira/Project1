@@ -11,9 +11,9 @@ const names = [
     suns: [
 
       {
-      name: "Estelar",
+      name: "Alfa Centauri",
       old: 4567,
-      description: " This sun is so hot but still have some planets with good condition to support life, ",
+      description: "It consists of a system of 3 gravitationally joined stars. A ternary system of stars orbiting a center of mass, Alpha Centauri A and Alpha Centauri B, plus a third red dwarf star, Proxima Centauri, which orbits around 2 stars Alpha Centauri A and B.",
       price:70,
       //planets start
       planets: [
@@ -450,7 +450,7 @@ const names = [
 
    {
     name: "Messier",
-    price: -10,
+    price: 500,
     estado: "",
     numPlanets: 3,
     description: 'This galaxy we know very well however when we were about to land on the last planet something happened with the ship and communication was lost, we could never know if that last planet could be the right one, we would go and find out for ourselves.',
@@ -658,7 +658,7 @@ const names = [
     name: "Centaurus",
     price: 750,
     estado: "",
-    numPlanets: 3,
+    numPlanets: 8,
     description: 'On earth we always think that this is the best option, it has all the possibilities of being a place for life and to sustain us for years but we never take on the task of sending an exploration ship with living beings, many believe that this is the suitable but will it be?',
     //suns start
     suns: [
@@ -670,23 +670,23 @@ const names = [
       price:70,
       //planets start
       planets: [
-        {
-        name: "ARD",
-        price: -50,
+      {
+        name: "Artemisa",
+        price: 100,
         sustainable: true,
-        img: "planet.png"
+        img: "planet.png",
+        description: "",
+        atmosfera: "",
+        size: ""
       }, 
       {
-        name: "ARD",
-        price: -50,
-        sustainable: true,
-        img: "planet.png"
-      }, 
-      {
-        name: "ARD",
-        price: -50,
-        sustainable: true,
-        img: "planet.png"
+        name: "ALG-52Z",
+        price: 150,
+        sustainable: false,
+        img: "planet.png",
+        description: "",
+        atmosfera: "",
+        size: ""
       }, 
       
       ]//planet end
@@ -700,22 +700,31 @@ const names = [
         price:70,
         planets: [
           {
-          name: "ARD",
-          price: -50,
-          sustainable: true,
-          img: "planet.png"
+          name: "ARD-4582",
+          price: 150,
+          sustainable: false,
+          img: "planet.png",
+          description: "",
+          atmosfera: "",
+          size: ""
         }, 
         {
-          name: "ARD",
-          price: -50,
-          sustainable: true,
-          img: "planet.png"
+          name: "ExoPlanet 50",
+          price: 50,
+          sustainable: false,
+          img: "planet.png",
+          description: "This planet",
+          atmosfera: "",
+          size: ""
         }, 
         {
-          name: "ARD",
-          price: -50,
-          sustainable: true,
-          img: "planet.png"
+          name: "Cafetal Moon",
+          price: 125,
+          sustainable: false,
+          img: "planet.png",
+          description: "",
+          atmosfera: "",
+          size: ""
         }, 
         
         ]//planet end
@@ -729,21 +738,21 @@ const names = [
           price:70,
           planets: [
             {
-            name: "ARD",
-            price: -50,
-            sustainable: true,
+            name: "Rubicks",
+            price: 50,
+            sustainable: false,
             img: "planet.png"
           }, 
           {
-            name: "ARD",
-            price: -50,
-            sustainable: true,
+            name: "MouseGal",
+            price: 150,
+            sustainable: false,
             img: "planet.png"
           }, 
           {
-            name: "ARD",
-            price: -50,
-            sustainable: true,
+            name: "Earth OP",
+            price: 150,
+            sustainable: false,
             img: "planet.png"
           }, 
           
@@ -759,7 +768,7 @@ const names = [
    
    {
     name: "Pinwheel",
-    price: -10,
+    price: 510,
     estado: "",
     numPlanets: 3,
     description: 'The data in the system about this galaxy is corrupt.',

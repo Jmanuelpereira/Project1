@@ -9,44 +9,21 @@
   let iniFuel = 1000;
   let costFuel = 0;
 
-  
-
   //hover things
 
   let galaxy;
   let sun;
-  let planet;
-
-  
+  let planet;  
   
   document.addEventListener("DOMContentLoaded", function(event) { 
 
-
     document.querySelector('.start').onclick = function() {
-      
-      
-      
+          
       let startButton = document.querySelector('.startButtons');
       startButton.classList.add('hidden-level')
       
-      
-      // let backButton = document.querySelector('.back2');
-      // backButton.classList.add('show');
-
-      // backButton.onclick = function(){
-
-      //   console.log('going backs')
-        
-      //   let x = window.location;
-
-      //   console.log(x)
-
-      // }
-      
-      
     //creating timer
-  
-    let timer = 180
+    let timer = 300
   
     setInterval(function(){
       // start:
@@ -54,7 +31,7 @@
   
       document.querySelector(".timer").innerHTML = timer;
       if (timer === 0) {
-        timer = 180;
+        timer = 300;
         setTimeout(function(){
           document.location.reload()
         }, 1000);
@@ -69,8 +46,9 @@
 function genSquares(){
     let numValue = 0 ;
     for (i = 0; i < names.length; i++){
-        numValue = Math.floor(Math.random() * names.length);
-        allSquares.push(names[Math.floor(Math.random() * names.length)]);
+        // numValue = Math.floor(Math.random() * names.length);
+        allSquares.push(names[i]);
+     
 
     }
    
@@ -86,6 +64,9 @@ function actualFuel(fuelCost){
   return iniFuel
   }
   else 
+  setTimeout(function(){
+    document.location.reload()
+  }, 1000);
     return alert("You dont have more fuel, YOU LOSE!")
 
 }
@@ -163,23 +144,23 @@ allPlanets.forEach((planet, id) => {
         let galDes = names.filter(galaxy => 
           galaxy.name === selectedGalaxy)
 
+          //insertando html a la descripcion
+
         descrip.innerHTML = 
         
         
         `
-
-        <ul>
-
+        
+        <ul style="list-style: none;">
+        <li><h2>${galDes[0].name}</h2></li>
         <li><h4>${galDes[0].description}</h4></li>
         <br>
-        <li>Price: ${galDes[0].price} fuel</li>
-        <li>Qty Planets: ${galDes[0].numPlanets}</li>
+        <li><b>Price:</b> ${galDes[0].price} fuel</li>
+        <li><b>Qty Planets:</b> ${galDes[0].numPlanets}</li>
         <li></li>
 
       <ul>
-        
-        
-        
+         
         `
           
      }) 
@@ -207,80 +188,108 @@ allPlanets.forEach((planet, id) => {
 
           callStarts();
 
-          showPlanetsInfo();
 
       }
 
   })
   
-  
   // ending level de galaxias
 
-  
-  
   //beginning level 2 
-
-
 const callStarts = () => document.querySelectorAll('.star').forEach(( start, id) => {
 
-
   start.addEventListener("mouseover", function( event ) { 
-
     
     let sunDes = names.filter(galaxy => 
-      galaxy.name === selectedGalaxy
-      )
-      // console.log(sunDes[0].suns[id].description)
-      
-      descrip.innerHTML = `<h4>${sunDes[0].suns[id].description}</h4>`
-      
+      galaxy.name === selectedGalaxy)
+          
+      descrip.innerHTML = 
+          
+      `
+      <ul style="list-style:none;">
+      <li><h2>${sunDes[0].suns[id].name}</h2></li>
+      <li><h4>${sunDes[0].suns[id].description}</h4></li>
+      <br>
+      <li><b>Price:</b> ${sunDes[0].suns[id].price} fuel</li>
+      <li><b>Age:</b> ${sunDes[0].suns[id].old} years old</li>
+      <li></li>
+      <ul>
+      ` 
 
  }) 
 
     start.onclick = function() {
 
-      
-
         selectedStart = start.getAttribute("name")
         secondLevel.classList.add('hidden-level')
+
+
 
             //getting planets
             let planets = names.filter(galaxy => 
             galaxy.name === selectedGalaxy)
-            let allPlanets = planets[0].suns[0].planets
+            let allPlanets = planets[0].suns[id].planets
+
+            console.log(allPlanets)
 
             //option price on fuel
-            document.querySelector(".fuel").innerHTML = actualFuel(planets[0].price)
+            document.querySelector(".fuel").innerHTML = actualFuel(planets[id].price)
+            createPlanets(allPlanets) 
 
-            createPlanets(allPlanets)
-        
-      
+            showPlanetsInfo();
     }
 
 }); // ending level de suns
 
+const showPlanetsInfo = () => document.querySelectorAll('.planet').forEach((planet, id) => {
 
-const showPlanetsInfo = () => document.querySelectorAll('.planet').forEach(( start, id) => {
+  planet.addEventListener("mouseover", function( event ) { 
+      
+      let PlaDes = names.filter(galaxy => 
+        galaxy.name === selectedGalaxy
+        )
+        console.log("test")
+        console.log(PlaDes[0].suns[0].planets[id].description)
+        
+        descrip.innerHTML = `<h4>${PlaDes[0].suns[0].planets[id].description}</h4>`
+        
 
+    })//end mouseover 
 
-  start.addEventListener("mouseover", function( event ) { 
-
+    //onclick planet function
     
-    let sunDes = names.filter(galaxy => 
-      galaxy.name === selectedGalaxy
-      )
-      // console.log(sunDes[0].suns[id].description)
+    planet.onclick = function() {
+
+   
+    
+      selectedSPlanet = planet.getAttribute("name")
       
-      // descrip.innerHTML = `<h4>${sunDes[0].suns[0].planets[id].description}</h4>`
+          // getting planets
+          let planets = names.filter(galaxy => 
+          galaxy.name === selectedGalaxy)
+          let allPlanets = planets[0].suns[0].planets
+
+          if(allPlanets.sustainable === true){
+
+            return alert("We did it! We found the right one!")
+          }
+
+          console.log("mierda")
+    
+          // option price on fuel
+      
+          document.querySelector(".fuel").innerHTML = actualFuel(planets[id].price)
       
 
- }) 
+          actualFuel(actualFuel(planets[0].price))
+    }
 
-});
+});//end planets
+
 
 
   
-}
+}//end onclick function
 
   
 
