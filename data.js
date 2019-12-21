@@ -29,7 +29,7 @@ const names = [
       {
         name: "ARD-B13",
         price: 100,
-        sustainable: true,
+        sustainable: false,
         img: "planet.png",
         description: "Many consider this the perfect candidate but we do not know if the data is correct.",
         atmosfera: "Oxigeno",
@@ -38,7 +38,7 @@ const names = [
       {
         name: "JGP-120",
         price: 100,
-        sustainable: true,
+        sustainable: false,
         img: "planet.png",
         description: "This planet is a chaos only receives light a few times a year, but nevertheless we know that life can be on a planet with these characteristics under the ground.",
         atmosfera: "Carbono",
