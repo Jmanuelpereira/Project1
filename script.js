@@ -117,6 +117,7 @@ document.querySelector('.first-level').innerHTML = html;
 
   //creating planets 
   function createPlanets(allPlanets) {
+     
     let htmlPlanets = '';
 allPlanets.forEach((planet, id) => {
   htmlPlanets += `<div class="square planet"  name="${planet.name}" price = ${planet.price}>`;
